@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Logger.constructor Should use constructor overrides on explicit specify 1`] = `
+[
+  [
+    "{"level":"INFO","environment":"test-environment","context":{},"message":"test-message","timestamp":"1970-01-01T00:00:00.000Z"}",
+  ],
+]
+`;
+
+exports[`Logger.constructor Should use environment variable overrides when available 1`] = `
+[
+  [
+    "{"level":"INFO","environment":"test-env-environment","context":{},"message":"test-message","timestamp":"1970-01-01T00:00:00.000Z"}",
+  ],
+]
+`;
+
+exports[`Logger.prototype.debug Should log debug level entry with valid arity 1`] = `
+[
+  [
+    "{"level":"DEBUG","environment":"DEVELOPMENT","context":{"raw":"\\"text-context\\""},"message":"test-message","timestamp":"1970-01-01T00:00:00.000Z"}",
+  ],
+]
+`;
+
+exports[`Logger.prototype.error Should log error level entry with valid arity 1`] = `
+[
+  [
+    "{"level":"ERROR","environment":"DEVELOPMENT","context":{"raw":"\\"text-context\\""},"message":"test-message","timestamp":"1970-01-01T00:00:00.000Z"}",
+  ],
+]
+`;
+
+exports[`Logger.prototype.info Should log info level entry with valid arity 1`] = `
+[
+  [
+    "{"level":"INFO","environment":"DEVELOPMENT","context":{"raw":"\\"text-context\\""},"message":"test-message","timestamp":"1970-01-01T00:00:00.000Z"}",
+  ],
+]
+`;
+
+exports[`Logger.prototype.warn Should log warn level entry with valid arity 1`] = `
+[
+  [
+    "{"level":"WARNING","environment":"DEVELOPMENT","context":{"raw":"\\"text-context\\""},"message":"test-message","timestamp":"1970-01-01T00:00:00.000Z"}",
+  ],
+]
+`;

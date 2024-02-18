@@ -1,0 +1,41 @@
+{
+  "name": "@ashenm/logger",
+  "version": "0.0.4",
+  "description": "An unified structured-logging interface",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "npx tsup",
+    "test": "npx jest",
+    "format:write": "npx prettier --write '**.json' '**.ts'"
+  },
+  "dependencies": {
+    "json-stringify-safe": "5.0.1"
+  },
+  "devDependencies": {
+    "@types/jest": "29.5.12",
+    "@types/json-stringify-safe": "5.0.3",
+    "jest": "29.7.0",
+    "mockdate": "3.0.5",
+    "prettier": "3.2.5",
+    "ts-jest": "29.1.2",
+    "ts-node": "10.9.2",
+    "tsup": "8.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashenm/logger.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ashenm/logger/issues",
+    "email": "mail@ashenm.dev"
+  },
+  "keywords": [],
+  "author": "Ashen Gunaratne <mail@ashenm.dev> (https://www.ashenm.dev/)",
+  "license": "ISC",
+  "homepage": "https://github.com/ashenm/logger#readme"
+}
